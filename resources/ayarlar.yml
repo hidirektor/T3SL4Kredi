@@ -1,0 +1,63 @@
+#####################################
+#       Kredi (Credit) Plugin       #
+#           by SYN_T3SL4            #
+#####################################
+
+########################################
+#   Genel Ayarlar / General Settings   #
+########################################
+
+PREFIX: "&2&lS&c&lO &e» "
+
+# Gün Cinsinden / In Days #
+ONAY_ISTEME_SURESI: 3
+PLACEHOLDER_SUPPORT: false
+
+########################################
+#   Genel Mesajlar / General Messages  #
+########################################
+
+CONFIG_RELOADED: "&aConfig Başarıyla Yenilendi !"
+COMMAND_ADDED: "&aKomut Başarıyla Oluşturuldu."
+
+SHOW_CREDIT_SELF: '&a%kredi% &7Krediniz Mevcut!'
+SHOW_CREDIT: '&c%player% &7isimli Oyuncunun &a%kredi% &7Kredisi Mevcut.'
+
+CREDI_ADDED_OTHER: "&e%player% &7isimli Oyuncunun Hesabına &a%kredi% &7Kredi Eklendi"
+CREDI_ADDED_YOUR: "&7Hesabınıza &a%kredi% &7Kredi Eklendi. Şuan da &a%toplam_kredi% &7Krediniz Mevcuttur!"
+CREDI_TAKEN_OTHER: "&e%player% &7isimli Oyuncunun Hesabından &4%kredi% &7Kredi Alındı."
+CREDI_TAKEN_YOUR: "&7Hesabınızdan &4%kredi% &7Kredi Alınmıştır. Şuan da &a%toplam_kredi% &7Krediniz Mevcuttur."
+
+########################################
+#    Hata Mesajları / Error Messages   #
+########################################
+NOT_ENOUGH_CREDIT: "&4%kredi% &7Krediye İhtiyacınız Var."
+PLAYER_NOT_FOUND: "&4%player% &7İsimli Oyuncu Bulunamadı !"
+
+NO_PERM_MESSAGE: "&4Bunu Kullanamazsınız !"
+ERROR_MESSAGE: "&4Bir Hata Oluştu!"
+KOMUT_OLUSTURMA_HATASI: "&4Komut Oluşturulurken Bir Sorun Oluştu !"
+
+TEKSEFERLIK_KOMUT: '&4Tek seferlik bir komutu tekrar kullanamazsın!'
+
+########################################
+#     Bilgi Yazıları / INFO LINES      #
+########################################
+INFO_LINE_1: '&5            =&b_&5=&b_&5=&b_&5=&b_&2&lSon&c&lOsmanli&5=&b_&5=&b_&5=&b_&5=&b_'
+INFO_LINE_2: "&7/kredim &e» &aKredilerinizi Görüntülersiniz"
+INFO_LINE_3: "&7/kredi [+/-] <İsim> <Miktar> &e» &aSeçilen Oyuncuya Kredi Ekler ya da Kredisini Silersiniz"
+INFO_LINE_4: "&7/kredi <Oyuncu> &e» &aİstediğin Oyuncunun Kredisine Bakabilirsin"
+INFO_LINE_5: "&7/kredi yeni '/Girilen Komut' <Kredi Miktarı> '/Gerçek Komut' &e» &aYeni Komut Oluşturmanızı Sağlar "
+INFO_LINE_6: "&7/kredi reload &e» &aKredi Pluginini Yeniler"
+
+########################################
+#    MySQL Ayarları / MySQL Settings   #
+########################################
+mysql-enabled: false
+MySQL:
+  host: hostname
+  port: "3306"
+  database: database
+  tablename: credit-db
+  user: root
+  password: "123"

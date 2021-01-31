@@ -1,0 +1,38 @@
+menuismi: "&9İşlemi Onaylıyor musun?"
+#slot numarasi
+0:
+  #itemin id si ve datası(olmayabilir)
+  #gerekli
+  item: "160:5"
+  #onayla,onaylama,null(null demek hiç bişi olmıycak demek)
+  #gerekli
+  tiklayinca: "onayla"
+  #gerekli
+  isim: "&aOnayla"
+  #opsiyonel
+  lore:
+  - "&7İşlemi &aOnaylamak &7İçin Tıkla"
+1:
+
+2:
+
+3:
+
+4:
+  item: "340"
+  tiklayinca: "null"
+  isim: "&aİşlem Bilgisi"
+  lore:
+  - "&7Girilecek Komut"
+  - "   "
+  - "&c%komutlar%"
+5:
+
+6:
+
+7:
+
+8:
+  item: "160:14"
+  tiklayinca: "onaylama"
+  isim: "&cİptal Et"
