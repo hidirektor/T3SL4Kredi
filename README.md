@@ -1,2 +1,8 @@
 # T3SL4Kredi
-Advanced credit version for minecraft 1.8.x - 1.16.x
+Source Code for T3SL4Kredi
+
+## Latest Version:
+31.01.2021
+
+## Spigot:
+https://www.spigotmc.org/resources/credit-mysql-support-approval-system-one-time-command-featherboard-placeholder-support.44028/
