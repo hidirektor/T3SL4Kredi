@@ -39,6 +39,7 @@ ERROR_MESSAGE: "&4Bir Hata Oluştu!"
 KOMUT_OLUSTURMA_HATASI: "&4Komut Oluşturulurken Bir Sorun Oluştu !"
 
 TEKSEFERLIK_KOMUT: '&4Tek seferlik bir komutu tekrar kullanamazsın!'
+CMD_NEW: "/kredi yeni <komut ismi> <fiyat> <komut>"
 
 ########################################
 #     Bilgi Yazıları / INFO LINES      #

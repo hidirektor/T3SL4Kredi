@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
 
-import me.t3sl4.kredi.T3SL4Kredi;
 import me.t3sl4.kredi.util.KrediAPI;
 import me.t3sl4.kredi.util.MessageUtil;
 import me.t3sl4.kredi.util.SettingsManager;
@@ -95,7 +94,7 @@ public class KrediCommands implements CommandExecutor {
                     return false;
                 }
                 if (args.length < 4) {
-                    sender.sendMessage(MessageUtil.PREFIX + "/kredi yeni <komut ismi> <fiyat> <komut> ");
+                    sender.sendMessage(MessageUtil.CMD_NEW);
                     return true;
                 }
                 ArrayList<String> arguments = new ArrayList<>();

@@ -10,50 +10,29 @@ import org.bukkit.Bukkit;
 
 public class MessageUtil {
     public static String PREFIX;
-
     public static String CONFIG_RELOADED;
-
     public static String NO_PERM_MESSAGE;
-
     public static String PLAYER_NOT_FOUND;
-
     public static String ERROR_MESSAGE;
-
     public static String SHOW_CREDIT;
-
     public static String SHOW_CREDIT_SELF;
-
     public static String NOT_ENOUGH_CREDIT;
-
     public static String COMMAND_ADDED;
-
     public static String CREDI_ADDED_OTHER;
-
     public static String CREDI_ADDED_YOUR;
-
     public static String CREDI_TAKEN_OTHER;
-
     public static String CREDI_TAKEN_YOUR;
-
     public static String INFO_LINE_1;
-
     public static String INFO_LINE_2;
-
     public static String INFO_LINE_3;
-
     public static String INFO_LINE_4;
-
     public static String INFO_LINE_5;
-
     public static String INFO_LINE_6;
-
     public static String TEKSEFERLIK_KOMUT;
-
     public static int ONAY_ISTEME_SURESI;
-
     public static String ONAY_MENU_TITLE;
-
     public static boolean PLACEHOLDER_SUPPORT;
+    public static String CMD_NEW;
 
     public static ArrayList<OnayMenuItems> ITEMS = new ArrayList<>();
 
@@ -83,6 +62,7 @@ public class MessageUtil {
         INFO_LINE_4 = PREFIX + T3SL4Kredi.chatcolor(manager.config.getConfig().getString("INFO_LINE_4"));
         INFO_LINE_5 = PREFIX + T3SL4Kredi.chatcolor(manager.config.getConfig().getString("INFO_LINE_5"));
         INFO_LINE_6 = PREFIX + T3SL4Kredi.chatcolor(manager.config.getConfig().getString("INFO_LINE_6"));
+        CMD_NEW = PREFIX + T3SL4Kredi.chatcolor(manager.config.getConfig().getString("CMD_NEW"));
         ArrayList<OnayMenuItems> test = new ArrayList<>();
         for (int i = 0; i < 9; i++)
             test.add(new OnayMenuItems());
