@@ -2,6 +2,7 @@ package me.t3sl4.kredi;
 
 import me.t3sl4.kredi.placeholder.MVdWPlaceholder;
 import me.t3sl4.kredi.placeholder.PAPIPlaceholder;
+import me.t3sl4.kredi.util.MessageUtil;
 import me.t3sl4.kredi.util.SettingsManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -20,11 +21,11 @@ public class T3SL4Kredi extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage("    ");
         if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI") || Bukkit.getPluginManager().isPluginEnabled("MVdWPlaceholderAPI")) {
             Bukkit.getConsoleSender().sendMessage(T3SL4Kredi.chatcolor("&e[Kredi] &aPlaceholder Destegi Aktif Edildi"));
-            if (Bukkit.getPluginManager().isPluginEnabled("MVdWPlaceholderAPI")) {
+            if(MessageUtil.PLACEHOLDER_SUPPORT && Bukkit.getPluginManager().isPluginEnabled("MVdWPlaceholderAPI")) {
                 new MVdWPlaceholder();
                 Bukkit.getConsoleSender().sendMessage(T3SL4Kredi.chatcolor("&e[Kredi] &cMVdWPlaceholder tespit edildi!"));
                 Bukkit.getConsoleSender().sendMessage(T3SL4Kredi.chatcolor("&e[Kredi] &cPlaceholders: &e[ {kredi_miktar} ]"));
-            } else if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
+            } else if(!MessageUtil.PLACEHOLDER_SUPPORT && Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
                 new PAPIPlaceholder(this).register();
                 Bukkit.getConsoleSender().sendMessage(T3SL4Kredi.chatcolor("&e[Kredi] &cPlaceholderAPI tespit edildi!"));
                 Bukkit.getConsoleSender().sendMessage(T3SL4Kredi.chatcolor("&e[Kredi] &cPlaceholders: &e[ %kredi_miktar% ]"));
