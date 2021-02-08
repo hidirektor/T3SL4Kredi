@@ -19,6 +19,7 @@ public class T3SL4Kredi extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage("  ___) |   | |   | |\\  |   | |    ___) |  ___) | | |___  |__   _|");
         Bukkit.getConsoleSender().sendMessage(" |____/    |_|   |_| \\_|   |_|   |____/  |____/  |_____|    |_|  ");
         Bukkit.getConsoleSender().sendMessage("    ");
+		Bukkit.getConsoleSender().sendMessage("T3SL4 Series: T3SL4Kredi");
         if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI") || Bukkit.getPluginManager().isPluginEnabled("MVdWPlaceholderAPI")) {
             Bukkit.getConsoleSender().sendMessage(T3SL4Kredi.chatcolor("&e[Kredi] &aPlaceholder Destegi Aktif Edildi"));
             if(MessageUtil.PLACEHOLDER_SUPPORT && Bukkit.getPluginManager().isPluginEnabled("MVdWPlaceholderAPI")) {
